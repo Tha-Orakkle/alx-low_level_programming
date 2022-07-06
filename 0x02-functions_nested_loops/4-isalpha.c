@@ -2,11 +2,10 @@
 /**
  * _isalpha - checks for alphabetic character
  * @c: is the letter to check for
- * Return: 1 if c is a letter, uppercase or lowercase,
- * 0 if otherwise
+ * Return: 1 or 0
  */
 
 int _isalpha(int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'B'));
+	return ((c >= 97 && c <= '122') || (c >= '65' && c <= '90'));
 }
