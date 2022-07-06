@@ -12,4 +12,4 @@ int add(int i, int j)
 
 	k = i + j;
 	return (k);
-}	
+}
