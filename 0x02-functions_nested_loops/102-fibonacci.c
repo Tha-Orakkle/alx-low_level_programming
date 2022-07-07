@@ -21,6 +21,7 @@ int main(void)
 		} else
 		{
 			printf("%ld\n", j);
+		}
 
 		next = j + k;
 		j = k;
