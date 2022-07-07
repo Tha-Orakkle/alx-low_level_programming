@@ -15,10 +15,12 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		if (j != 32951280099)
+		if (j != 20365011074)
 		{
 			printf("%ld, ", j);
-		}
+		} else
+		{
+			printf("%ld\n", j);
 
 		next = j + k;
 		j = k;
