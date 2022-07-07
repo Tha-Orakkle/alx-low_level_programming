@@ -15,10 +15,7 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		if (j <= 12586269025)
-		{
-			printf("%d, ", j);
-		} else
+		if (j != 20365011074)
 		{
 			printf("%d, ", j);
 		}
