@@ -8,11 +8,17 @@
 
 void puts2(char *str)
 {
-	int i;
+	int i, j, len;
 
-	for (i = 0; str[i] != '\0'; i += 2)
+	/* calclulates the length of the string. */
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	len = i - 1;
+
+	/* prints every other character of the string. */
+	for (j = 0; j <= len; j += 2)
 	{
-		_putchar(str[i]);
+		_putchar(str[j]);
 	}
 	_putchar('\n');
 }
