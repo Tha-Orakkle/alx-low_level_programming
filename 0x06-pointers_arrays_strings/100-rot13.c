@@ -10,7 +10,7 @@
 char *rot13(char *s)
 {
 	int i, j;
-	char *str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabecdeghijklmnopqrstuvwxyz";
+	char *str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *str2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	/* checks through s*/
@@ -25,6 +25,6 @@ char *rot13(char *s)
 			}
 		}
 	}
+
 	return (s);
 }
-
