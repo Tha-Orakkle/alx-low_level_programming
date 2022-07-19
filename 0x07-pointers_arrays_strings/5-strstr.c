@@ -22,5 +22,6 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack++;
 	}
+	haystack[i] = '\0';
 	return (haystack);
 }
