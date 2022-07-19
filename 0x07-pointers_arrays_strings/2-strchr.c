@@ -2,23 +2,26 @@
 
 /**
  * _strchr - checks a string for the occurrence of a character
- * @s: string to check
+ * @s: string to be checked
  * @c: character to check for
  * Return: pointer to first occurence of the character
  * or NULL if character is not found
  */
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			return (s + i);
+			return (s);
 		}
+		s++;
 	}
-	return ('\0');
+	if (*s != c)
+	{
+		return (s);
+	}
+	return (0);
 }
 
 
