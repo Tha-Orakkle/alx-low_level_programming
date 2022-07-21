@@ -18,3 +18,6 @@
 ## 5-sqrt_recursion.c
 * A function that prints square root of a given number.
 * Your subconscious is looking for the dreamer
+## 6-is_prime_number.c
+* A function that checks if a number is a prime number
+* Inception. Is it possible? "I don't know. ALX, I just want to sleep."
