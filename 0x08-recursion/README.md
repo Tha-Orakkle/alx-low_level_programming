@@ -12,3 +12,6 @@
 ## 3-factorial.c
 * A function that prints factorial of a given number.
 * You mustn't be afraid to dream a little bigger, darling
+## 4-pow_recursion.c
+* A function that returns the value of x raised to power y.
+* Once an idea has taken hold of the brain it's almost impossible to eradicate
