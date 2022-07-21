@@ -15,3 +15,6 @@
 ## 4-pow_recursion.c
 * A function that returns the value of x raised to power y.
 * Once an idea has taken hold of the brain it's almost impossible to eradicate
+## 5-sqrt_recursion.c
+* A function that prints square root of a given number.
+* Your subconscious is looking for the dreamer
