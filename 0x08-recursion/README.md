@@ -9,3 +9,6 @@
 ## 2-strlen_recursion.c
 * A function that prints the length pf a string.
 * Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
+## 3-factorial.c
+* A function that prints factorial of a given number.
+* You mustn't be afraid to dream a little bigger, darling
