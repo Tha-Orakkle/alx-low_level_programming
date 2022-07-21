@@ -6,3 +6,6 @@
 ## 1-print_rev_recursion.c
 * A function that prints a string in reverse.
 * Why is it so important to dream? Because, in my dreams we are together
+## 2-strlen_recursion.c
+* A function that prints the length pf a string.
+* Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
