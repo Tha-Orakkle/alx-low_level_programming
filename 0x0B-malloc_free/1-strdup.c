@@ -21,7 +21,11 @@ char *_strdup(char *str)
 		;
 
 	/* allocates new memory space for a string*/
-	new_str = malloc(sizeof(char) * len);
+	new_str = (char *) malloc(sizeof(char) * len);
+	if (new_str == NULL)
+	{
+		return (NULL);
+	}
 
 	/* Create a copy of the string in the new space*/
 	for (i = 0; str[i] != '\0'; i++)
