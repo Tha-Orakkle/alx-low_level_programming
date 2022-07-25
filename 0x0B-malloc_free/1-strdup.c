@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	}
 	/* finds the length of the string passed */
 
-	for (len = 0; len <= '\0'; len++)
+	for (len = 0; str[len] <= '\0'; len++)
 		;
 
 	/* allocates new memory space for a string*/
