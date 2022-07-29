@@ -21,7 +21,7 @@ char *_memset(char *s, char b, unsigned int n)
 }
 /**
  * _calloc - allocates memory to an array of elements
- * initialized to 0;
+ * the memory is set to 0;
  * @nmemb: number of elements in the array
  * @size: byte size of the array
  *
