@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * _memset - fills a memory with b
+ * @s: array to fill
+ * @b: char to fill the memory with
+ * @n: number of times to copy b
+ *
+ * Return: s
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
+/**
  * _calloc - allocates memory to an array of elements
  * initialized to 0;
  * @nmemb: number of elements in the array
@@ -12,7 +31,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -22,5 +41,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 
+	_memset(ptr, 0, nmemb);
 	return (ptr);
 }
