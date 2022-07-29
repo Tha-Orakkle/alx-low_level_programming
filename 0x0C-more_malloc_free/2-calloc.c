@@ -1,5 +1,6 @@
 #include "main.h"
 
+char *_memset(char *s, char b, unsigned int n);
 /**
  * _memset - fills a memory with b
  * @s: array to fill
