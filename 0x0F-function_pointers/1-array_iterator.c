@@ -13,7 +13,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	long unsigned int i;
 
 	/* if null argument is passed */
-	if (action == NULL || action == NULL)
+	if (array == NULL || action == NULL)
 		return;
 
 	/* loop through element of array*/
