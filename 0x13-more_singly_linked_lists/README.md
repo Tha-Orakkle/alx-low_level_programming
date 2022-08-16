@@ -8,4 +8,5 @@
 * File 6-pop_listint.c - frees listint_t list and returns the value of data(n) of the listint_list
 * File 7-get_nodeint.c - gets the nth node of a lintint_t list
 * File 8-sum_listint.c - returns the sum of all data(n) of the listint_t list
-* File 9-insert_nodeint.c inserts a new node in a given position
+* File 9-insert_nodeint.c - inserts a new node in a given position
+* File 10-delete_nodeint.c - deletes a node of a given index
