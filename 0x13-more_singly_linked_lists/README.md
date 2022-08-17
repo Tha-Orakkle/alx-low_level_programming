@@ -10,3 +10,4 @@
 * File 8-sum_listint.c - returns the sum of all data(n) of the listint_t list
 * File 9-insert_nodeint.c - inserts a new node in a given position
 * File 10-delete_nodeint.c - deletes a node of a given index
+* File 100-reverse_listint.c - reverses the nodes in a listintt list
