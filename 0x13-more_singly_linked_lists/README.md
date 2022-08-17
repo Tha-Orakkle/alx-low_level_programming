@@ -13,3 +13,4 @@
 * File 100-reverse_listint.c - reverses a listint_t linked list
 * File 101-print_listint_safe.c - prints a listint_t linked list safely
 * File 102-free_listint_safe.c - freesa listint_t linked list safely
+* File 103-find_loop.c - Finds loop in a linked list
