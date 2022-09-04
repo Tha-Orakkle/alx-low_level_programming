@@ -11,3 +11,4 @@
 * File 9-times_table.c - prints the 9 times table
 * File 10-add.c - adds two integers
 * File 11-print_to_98.c - prints all natural numbers from n to 98
+* File 100-times_table.c - prints n times table
