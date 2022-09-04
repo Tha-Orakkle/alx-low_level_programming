@@ -12,3 +12,4 @@
 * File 10-add.c - adds two integers
 * File 11-print_to_98.c - prints all natural numbers from n to 98
 * File 100-times_table.c - prints n times table
+* File 101-natural.c - prints the sum of multiples of 3 and 5 below 1024
