@@ -15,3 +15,4 @@
 * File 101-natural.c - prints the sum of multiples of 3 and 5 below 1024
 * File 102-fibonacci.c - prints the first 50 fibonacci numbers
 * File 103-fibonacci.c - finds the fibonacci numbers below 4,000,000 and prints the sum of all even-valued terms
+* File 104-fibonacci.c - prints the first 98 fibonacci numbers
