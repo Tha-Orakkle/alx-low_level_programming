@@ -12,3 +12,4 @@ File 0-isupper.c - checks for uppercase letter
 * File 8-print_square.c - prints a square
 * File 9-fizz_buzz.c - prints the numbers from 1 to 100, followed by a new line, but for multiples of three prints Fizz instead of the number and for the multiples of five prints Buzz
 * File 10-print_triangle.c - prints a triangle
+* File 100-prime_factor.c - prints the largest ptime factor of the number 612852475143
