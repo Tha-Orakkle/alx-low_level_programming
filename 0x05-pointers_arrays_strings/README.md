@@ -10,3 +10,4 @@
 * File 8-print_array.c - prints n elements of array of integers, followed by a new line
 * File 9-strcpy.c - copies the string pointed to by src including the null byte to the buffer pointed to by dest
 * File 100-atoi.c - converts string to an integer
+* File 101-keygen.c - generates random valid passwords for the program 101-crackme.
