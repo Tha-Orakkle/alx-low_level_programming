@@ -17,14 +17,14 @@ int _atoi(char *s)
 	while (i < len && flag == 0)
 	{
 		if (s[i] == '-')
-			sign++;
+			++sign;
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
-			n = n * 10 + digit;
 			if (sign % 2)
-				n = -n;
+				digit = -digit;
+			n = n * 10 + digit;
 			flag = 1;
 
 			if (s[i + 1] < '0' || s[i + 1] > '9')
