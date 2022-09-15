@@ -24,7 +24,7 @@ int main(void)
 	char *uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int up_len = strlen(uppers);
 
-	char *symbols = "!@#%^&*()";
+	char *symbols = "!\"@#$%^&'*()+-/:;?><=[]\\_";
 	int sym_len = strlen(symbols);
 
 	srand(time(NULL) * getpid());
