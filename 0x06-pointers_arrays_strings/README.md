@@ -9,4 +9,4 @@
 * File 7-leet.c - encodes a string into 1337
 * File 100-rot13.c - encodes a string using rot13
 * File 101-print_number.c - prints an integer
-
+* FIle 102-magic.c - prints `a[2] = 98`
