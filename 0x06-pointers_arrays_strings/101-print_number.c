@@ -12,26 +12,11 @@ void print_number(int n)
 	{
 		n1 = -n;
 		_putchar('-');
-		_putchar(n1);
 	}
-	else if (n == 0)
-	{
-		_putchar(n);
-	}
-	else if (n > 0 && n < 10)
-	{
-		_putchar(n);
-	}
-	else if (n >= 10 && n < 100)
-	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n >= 100 && n < 1000)
-	{
-		_putchar((n / 100) + '0');
-		_putchar(((n % 100) / 10) + '0');
-		_putchar(((n % 100) % 10) + '0');
-	}
+	else
+		n1 = n;
+	if (n1 / 10)
+		print_number(n1 / 10);
 
+	_putchar((n1 % 10) + '0');
 }
