@@ -12,7 +12,7 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int count = 0, i = 0;
-	dlistint_t *current = *head, temp = *head;
+	dlistint_t *current = *head, *temp = *head;
 	dlistint_t *new, *backward, *forward;
 
 	if (!head)
