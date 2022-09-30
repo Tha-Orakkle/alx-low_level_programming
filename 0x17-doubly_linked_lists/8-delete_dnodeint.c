@@ -43,6 +43,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			forward->prev = NULL;
 		current->next = NULL;
 		free(current);
+		*head = forward;
 		return (1);
 	}
 
