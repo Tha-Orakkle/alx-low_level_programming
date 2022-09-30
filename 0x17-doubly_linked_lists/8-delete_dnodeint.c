@@ -33,13 +33,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *current = *head, *backward, *forward;
 	unsigned int i;
 
-	if (!head || index > dlistint_len(current))
+	if (!head || index >= dlistint_len(current))
 		return (-1);
 
 	if (index == 0)
 	{
 		forward = current->next;
-		if (current->next)
+		if (forward)
 			forward->prev = NULL;
 		current->next = NULL;
 		free(current);
