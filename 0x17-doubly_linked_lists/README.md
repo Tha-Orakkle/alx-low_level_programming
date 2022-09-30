@@ -14,3 +14,5 @@ Files | Descriptions
 [8-delete_dnodeint.c](./8-delete_dnodeint.c) | C function that deletes the node at index index of a dlistint_t linked list
 [100-password](./100-password) | Password for a compiled python program
 [102-result](./102-result) | largest palindrome made from the product of two 3-digit numbers
+[3-digit_product_palindrome.c](./3-digit_product_palindrome.c) | finds the largest palindrome made from the product o    f two 3-digit numbers
+
