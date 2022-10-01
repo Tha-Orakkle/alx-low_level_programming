@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _strstr - find the first occurence of the substring needle
@@ -23,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 				break;
 		}
 		if (!needle[j])
-			return(&haystack[i]};
+			return(&haystack[i]);
 	}
 	return (NULL);
 }
