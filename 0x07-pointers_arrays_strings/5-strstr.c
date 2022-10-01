@@ -6,25 +6,24 @@
  * in a string haystack
  * @haystack: string
  * @needle: substring to check for
+ *
  * Return: returns pointer to beginning of the location of the
  * substring
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
+	int i, j;
 
-	if (*needle == '\0')
-		return (haystack);
-
-	/*loops through the string*/
-	for (i = 0; haystack[i] != '\0';)
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		if (haystack[i] == *needle)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			return (haystack);
+			if (haystack[i + j] != needle[j])
+				break;
 		}
-		haystack++;
+		if (!needle[j])
+			return(&haystack[i]};
 	}
 	return (NULL);
 }
