@@ -52,10 +52,26 @@ hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 	return (*head);
 }
 
+/**
+ * replace_node - replaces the value of a key that already exists
+ * @head: double pointer to hash node
+ * @key: key to check for
+ * @value: new value to replace
+ */
+void replace_node(hash_node_t **head, const char *key, const char *value)
+{
+	hash_node_t *tmp = *head;
 
+	while (tmp && strcmp(tmp->key, key) != 0)
+		tmp = tmp->next;
+
+	free(tmp->value);
+	tmp->value = strdup(value);
+}
 
 /**
  * hash_table_set - adds an element to the hash table
+ * @ht: hash table data structure
  * @key: key of the element
  * @value: value associated with key
  *
@@ -72,8 +88,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	idx = key_index((unsigned char *)key, ht->size);
 
 	retval = check_key(ht->array[idx], key);
-	if (retval == 0)
-		add_node(&ht->array[idx], key, value);
+	if (retval == 1)
+	{
+		replace_node(&ht->array[idx], key, value);
+		return (1);
+	}
+	add_node(&ht->array[idx], key, value);
 	if (&ht->array[idx] == NULL)
 		return (0);
 
