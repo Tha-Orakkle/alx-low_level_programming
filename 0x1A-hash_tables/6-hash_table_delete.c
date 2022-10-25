@@ -15,7 +15,6 @@ void del_node(hash_node_t *head)
 	while (current)
 	{
 		tmp = current->next;
-		current->next = NULL;
 		free(current->key);
 		free(current->value);
 		free(current);
