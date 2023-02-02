@@ -5,3 +5,4 @@ Files | Desciption
 ----- | ----------
 [hash_tables.h](./hash_tables.h) | Header file containing the function prototypes and structs for this project
 [0-hash_table_create.c](./0-hash_table_create.c) | C function that creates a hash table
+[1-djb2.c](./1-djb2.c) |  C hash function implementing the djb2 algorithm

@@ -1,8 +1,9 @@
-#ifndef HASH_TABLEs_H_
-#define HASH_TABLES_H_
+#ifndef HASH_TABLES_H
+#define HASH_TABLES_H
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 /**
@@ -36,6 +37,6 @@ typedef struct hash_table_s
 
 
 hash_table_t *hash_table_create(unsigned long int size);
-
+unsigned long int hash_djb2(const unsigned char *str);
 
 #endif
