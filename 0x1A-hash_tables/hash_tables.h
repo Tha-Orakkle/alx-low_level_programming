@@ -1,8 +1,9 @@
-#ifndef HASH_TABLEs_H_
-#define HASH_TABLES_H_
+#ifndef HASH_TABLEs_H
+#define HASH_TABLES_H
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 /**
