@@ -42,7 +42,10 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 unsigned long int check_key(hash_node_t *linked_list, const char *key);
 hash_node_t *add_node(hash_node_t **head, const char *key, const char *value);
-void *replace_node(hash_node_t **head, const char *key, const char *value);
-
+void replace_node(hash_node_t **head, const char *key, const char *value);
+char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
+int print_node(hash_node_t **head);
+int check_remaining_data(const hash_table_t *ht, unsigned long int idx);
 
 #endif
