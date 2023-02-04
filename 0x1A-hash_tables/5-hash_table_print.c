@@ -3,6 +3,8 @@
 /**
  * print_node - prints elements of the linked list
  * @head: double pointer to linked list
+ *
+ * Return: 1 if an element was printed, otherwise 0
  */
 
 int print_node(hash_node_t **head)
