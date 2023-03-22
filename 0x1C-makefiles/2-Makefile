@@ -1,0 +1,12 @@
+# CC - compiler used
+CC=gcc
+# SRC - source code files with .c extension
+SRC= main.c school.c
+# OBJ - object files with o extension
+OBJ=$(SRC:.c=.o)
+# NAME - name of the executable
+NAME=school
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)

@@ -1,0 +1,23 @@
+# CC - compiler used
+CC=gcc
+# SRC - source code files with .c extension
+SRC= main.c school.c
+# OBJ - object files with o extension
+OBJ=$(SRC:.c=.o)
+# NAME - name of the executable
+NAME=school
+# RM - deletes files
+RM=rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
