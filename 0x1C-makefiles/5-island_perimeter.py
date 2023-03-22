@@ -20,3 +20,8 @@ def island_perimeter(grid):
         for rows in range(width):
             if grid[cols][rows] == 1:
                 size += 1
+                if (rows > 0 and grid[cols][rows - 1] == 1):
+                    edges += 1
+                if (cols > 0 and grid[cols - 1][rows] == 1):
+                    edges += 1
+    return (size * 4) - (edges * 2)
