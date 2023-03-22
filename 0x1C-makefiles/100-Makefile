@@ -1,0 +1,29 @@
+# CC - compiler used
+CC=gcc
+
+# CFLAGS - compiler flags
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+# SRC - source code files with .c extension
+SRC= main.c school.c
+
+# OBJ - object files with o extension
+OBJ=$(SRC:.c=.o)
+
+# NAME - name of the executable
+NAME=school
+
+.PHONY: all clean oclean fclean re
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
