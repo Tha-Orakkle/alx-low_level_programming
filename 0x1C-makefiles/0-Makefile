@@ -1,0 +1,8 @@
+# compiler
+CC=gcc
+# source code files that will be compiled
+SOURCE_FILES= main.c school.c
+all: school
+
+school: $(SOURCE_FILES)
+	$(CC) $(SOURCE_FILES) -o school
