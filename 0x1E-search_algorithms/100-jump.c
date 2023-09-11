@@ -1,0 +1,36 @@
+#include "search_algos.h"
+#include <math.h>
+
+/**
+ * jump_search - searches for a value in a sorted array
+ *		using the jump seaech algorithm
+ * @array: pointer to the array
+ * @size: length of the array
+ * @value: value to search for
+ *
+ * Return: returns the index of the value or -1
+ */
+int jump_search(int *array, size_t size, int value)
+{
+	size_t idx, step = sqrt(size);
+
+	if (!array || size == 0)
+		return (-1);
+	for (idx = 0; idx < size; idx += step)
+	{
+		if (array[idx] == value)
+			return ((int)idx);
+		if (array[idx] > value)
+		{
+			idx = idx - step;
+			break;
+		}
+	}
+	for (; idx < (idx + step); idx++)
+	{
+		if (array[idx] == value)
+			return ((int)idx);
+	}
+
+	return (-1);
+}
