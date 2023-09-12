@@ -2,7 +2,7 @@
 
 /**
  * interpolation_search - searches for a value in a sorted array of integers
- * 			- using the interpolation search algorithm
+ *			- using the interpolation search algorithm
  * @array: pointer to the array
  * @size: length of the array
  * @value: value to search for
